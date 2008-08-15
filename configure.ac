@@ -1,0 +1,49 @@
+#                                               -*- Autoconf -*-
+# Process this file with autoconf to produce a configure script.
+
+AC_PREREQ(2.62)
+AC_INIT([rampholdconverter], [1.0], [Jose.Negron@FlightSafety.com])
+AM_INIT_AUTOMAKE([rampholdconverter], [1.0])
+AC_CONFIG_SRCDIR([link-warning.h])
+AC_CONFIG_HEADERS([config.h])
+
+# Checks for programs.
+AC_PROG_CC
+gl_EARLY
+
+# Checks for libraries.
+
+# Checks for header files.
+AC_FUNC_ALLOCA
+AC_CHECK_HEADERS([OS.h inttypes.h langinfo.h libintl.h limits.h locale.h malloc.h stddef.h stdint.h stdlib.h string.h sys/param.h unistd.h wchar.h wctype.h])
+# For gnulib.
+gl_INIT
+
+# Checks for typedefs, structures, and compiler characteristics.
+AC_HEADER_STDBOOL
+AC_TYPE_UID_T
+AC_C_INLINE
+AC_TYPE_INT32_T
+AC_TYPE_OFF_T
+AC_C_RESTRICT
+AC_TYPE_SIZE_T
+AC_TYPE_SSIZE_T
+AC_TYPE_UINT32_T
+
+# Checks for library functions.
+AC_FUNC_CHOWN
+AM_GNU_GETTEXT
+AM_GNU_GETTEXT_VERSION
+AC_FUNC_MALLOC
+AC_FUNC_MBRTOWC
+AC_FUNC_REALLOC
+AC_FUNC_STRNLEN
+AC_FUNC_STRTOD
+AC_CHECK_FUNCS([dup2 fchdir ftruncate getcwd getpagesize isascii iswprint lchown memmove mempcpy memset nl_langinfo putenv re_comp regcomp rpmatch setenv setlocale stpcpy strchr strcspn strdup strerror strndup strpbrk strrchr strspn strstr wcwidth])
+
+AC_CONFIG_FILES([Makefile
+                 doc/Makefile
+                 lib/Makefile
+                 m4/Makefile
+                 src/Makefile])
+AC_OUTPUT

@@ -1,0 +1,3 @@
+autoscan: warning: missing AM_GNU_GETTEXT wanted by: 
+	lib/gettext.h:137
+	lib/gettext.h:213
