@@ -11,7 +11,7 @@
 # implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 bin_PROGRAMS = rampholdconverter
-rampholdconverter_SOURCES = main.c usage.c usage.h nav_iplib.h nav_iplib.c
+rampholdconverter_SOURCES = main.c usage.c usage.h nav_iplib.h nav_iplib.c reposn.c reposn.h utils.c utils.h
 AM_CPPFLAGS = -I$(top_builddir)/lib -I$(top_srcdir)/lib
 LDADD = $(top_srcdir)/lib/libgnu.a
 
