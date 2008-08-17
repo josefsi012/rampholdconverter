@@ -31,4 +31,7 @@
 	<File name="src/nav_iplib.h" open="1" top="0" tabpos="7">
 		<Cursor position="117" topLine="0" />
 	</File>
+	<File name="src/reposn.c" open="1" top="1" tabpos="8">
+		<Cursor position="1990" topLine="46" />
+	</File>
 </CodeBlocks_layout_file>
